@@ -16,6 +16,7 @@
     <link href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
     <link type="text/css" href="./css/argon.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -99,12 +100,12 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-alternative"
-                                        id="listCreator" placeholder="Enter a number to search and press enter...">
+                                        id="searchKey" placeholder="Enter a number to search and press search button...">
                                 </div>
                             </div>
-                            <div class="col-md-12 lists"></div>
+                            <div class="row p-0 lists"></div>
                             <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-success">Search</button>
+                                <button id="searchButton" type="button" class="btn btn-success">Search</button>
                             </div>
                         </div>
                     </div>
@@ -121,6 +122,7 @@
     <script src="./vendor/chart.js/dist/Chart.extension.js"></script>
     <!-- Argon JS -->
     <script src="./js/argon.min.js"></script>
+    <script src="./js/create-list.js"></script>
     <script src="./js/b-search.js"></script>
 </body>
 

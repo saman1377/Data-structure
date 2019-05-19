@@ -21,6 +21,16 @@ function binarySearch(list, value) {
     return (list[middle] !== value) ? -1 : middle
 }
 
-const list = [2, 5, 8, 9, 13, 45, 67, 99]
-console.log(binarySearch(list, 99)) // 7 -> returns the index of the item
+$(document).on('click', '#searchButton', function () {
+    const list = getList();
+    const key = $('#searchKey').val();
 
+    if(list.length && key != '') {
+        var start = window.performance.now();
+        var b = binarySearch(list, key); 
+        var end = window.performance.now();
+        var time = end - start;
+        createResult(time, b)
+        clean();
+    }
+})

@@ -4,9 +4,3 @@ function linearSearch(array, toFind) {
     }
     return -1;
 }
-
-// console.time('a');
-
-// a(); // Whatever is timed goes between the two "console.time"
-
-// console.timeEnd('a');
