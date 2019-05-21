@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./l-search.html">
-                            <i class="ni ni-planet text-yellow"></i> Linear search
+                            <i class="ni ni-planet text-teal"></i> Linear search
                         </a>
                     </li>
                     <li class="nav-item">
@@ -84,7 +84,7 @@
             </div>
         </nav>
         <!-- Header -->
-        <div class="header bg-gradient-yellow pb-8 pt-5 pt-md-8">
+        <div class="header bg-gradient-teal pb-8 pt-5 pt-md-8">
             <div class="container-fluid">
                 <div class="header-body">
                     <div class="card col-md-12">
@@ -98,13 +98,13 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-alternative" id="listCreator"
-                                        placeholder="Enter a number to search and press enter...">
+                                    <input type="text" class="form-control form-control-alternative" id="searchKey"
+                                        placeholder="Enter a number to search and press search...">
                                 </div>
                             </div>
                             <div class="col-md-12 lists"></div>
                             <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-success">Search</button>
+                                <button id="searchButton" type="button" class="btn btn-success">Search</button>
                             </div>
                         </div>
                     </div>
@@ -126,6 +126,7 @@
     <script src="./vendor/chart.js/dist/Chart.extension.js"></script>
     <!-- Argon JS -->
     <script src="./js/argon.min.js"></script>
+    <script src="./js/create-list.js"></script>
     <script src="./js/l-search.js"></script>
 </body>
 

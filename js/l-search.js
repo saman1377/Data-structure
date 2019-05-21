@@ -4,3 +4,17 @@ function linearSearch(array, toFind) {
     }
     return -1;
 }
+
+$(document).on('click', '#searchButton', function () {
+    const list = getList();
+    const key = $('#searchKey').val();
+
+    if (list.length && key != '') {
+        var start = window.performance.now();
+        var b = linearSearch(list, key);
+        var end = window.performance.now();
+        var time = end - start;
+        createResult(time, b)
+        clean();
+    }
+})
