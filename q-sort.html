@@ -87,10 +87,19 @@
         <div class="header bg-gradient-red pb-8 pt-5 pt-md-8">
             <div class="container-fluid">
                 <div class="header-body">
-                    <div class="card col-md-12 text-center">
+                    <div class="card col-md-12">
                         <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Welcome to my site</h5>
-                            <p class="card-text">use sidebar navigation to go current page.</p>
+                            <h5 class="card-title">Quick Sort</h5>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-alternative number" id="listCreator"
+                                        placeholder="Enter a number for list and press enter...">
+                                </div>
+                            </div>
+                            <div class="col-md-12 lists"></div>
+                            <div class="col-md-12 text-right">
+                                <button id="searchButton" type="button" class="btn btn-success">Sort</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,6 +120,7 @@
     <script src="./vendor/chart.js/dist/Chart.extension.js"></script>
     <!-- Argon JS -->
     <script src="./js/argon.min.js"></script>
+    <script src="./js/create-list.js"></script>
     <script src="./js/q-sort.js"></script>
 </body>
 
